@@ -38,7 +38,7 @@ export const addContact = createAsyncThunk(
   prefix.addContact,
   async (newContact, thunkAPI) => {
     try {
-      const response = await instance.post("/contacts", newContact);
+      const response = await instance.post(API_GET_CONTACTS, newContact);
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
