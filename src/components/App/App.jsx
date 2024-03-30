@@ -4,7 +4,7 @@ import { ContactList } from "../ContactList/ContactList";
 import { SearchBox } from "../SearchBox/SearchBox";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { getContacts } from "../../redux/contactsApi";
+import { getContacts } from "../../redux/contactsOps";
 import css from "./App.module.css";
 
 export const App = () => {
